@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>app.outlander24</groupId>
-    <artifactId>word-counter</artifactId>
+    <artifactId>most-freq-word-counter</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <build>
