@@ -37,6 +37,6 @@ public class MostFreqWord {
         for (Tuple2<Integer, String> tuple : output) {
             System.out.println("(" + tuple._1() + ": " + tuple._2() + ")");
         }
-
+        sc.stop();
     }
 }
