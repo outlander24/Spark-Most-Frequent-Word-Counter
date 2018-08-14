@@ -15,7 +15,7 @@ $ ./bin/spark-submit --class MostFreqWord --master local[4] most-freq-word-count
 #### How is Spark playing the game:
 
 1) The DAG gets created without actually executing anything. 
-The below snipped computes/executes nothing but just creates a dependency graph (DAG) laying out the sequence in which
+The below snippet computes/executes nothing but just creates a dependency graph (DAG) laying out the sequence in which
 **transformations** will be done returning us **RDD** of that transformation. 
 ```
 JavaRDD<String> textFile = sc.textFile(args[0]);
@@ -50,7 +50,7 @@ the functions will run in different threads.
 upon available resources. 
 
 ```$ ./bin/spark-submit --class MostFreqWord --master yarn most-freq-word-counter-1.0-SNAPSHOT.jar {path to a file}```
-The above snippet will let yarn to distribute tasks over clusters
+This snippet will let yarn to distribute tasks over clusters
 
 ```$ ./bin/spark-submit --class MostFreqWord --master local[k] most-freq-word-counter-1.0-SNAPSHOT.jar {path to a file}```
-The above snippet runs Spark locally with k worker threads to distribute the tasks to.  
+This snippet runs Spark locally with k worker threads to distribute the tasks to.  
